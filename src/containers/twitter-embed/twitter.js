@@ -6,9 +6,7 @@ import {twitterDetails} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 const renderLoader = () => <Loading />;
-const cantDisplayError =
-  "<div className='centerContent'><h2>Can't load? Check privacy protection settings</h2></div>";
-
+const cantDisplayError =""
 function timeOut() {
   setTimeout(function () {
     if (!document.getElementById("twitter").innerHTML.includes("iframe")) {
