@@ -10,7 +10,7 @@ export default function CustomCarousel({ images, interval = 4000 }) {
       nextSlide();
     }, interval);
     return () => clearInterval(timer);
-  }, [currentIndex, interval, totalSlides]); // ✅ Added missing dependencies
+  }, [currentIndex, interval, totalSlides,nextSlide]); // ✅ Added missing dependencies
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
