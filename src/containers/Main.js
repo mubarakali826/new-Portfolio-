@@ -20,7 +20,6 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
-import Threads from "../blocks/Backgrounds/Threads/Threads";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
