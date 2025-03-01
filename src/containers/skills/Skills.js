@@ -6,6 +6,7 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import TextPressure from "../../blocks/TextAnimations/TextPressure/TextPressure";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
@@ -32,7 +33,26 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              <div
+                style={{
+                  position: "relative",
+                  height: "100px",
+                  marginBottom: "40px"
+                }}
+              >
+                <TextPressure
+                  text={skillsSection.title}
+                  flex={true}
+                  alpha={false}
+                  stroke={false}
+                  width={true}
+                  weight={true}
+                  italic={true}
+                  textColor="#ffffff"
+                  strokeColor="#ff0000"
+                  minFontSize={36}
+                />
+              </div>{" "}
             </h1>
             <p
               className={

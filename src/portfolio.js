@@ -243,6 +243,57 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
+const whatIDid = {
+  title: "What I Did",
+  subtitle: "STARTUPS AND PROJECTS WHERE I CONTRIBUTED TO TECH DEVELOPMENT",
+  projects: [
+    {
+      image: require("./assets/images/pharmazone.webp"),
+      image1:require("./assets/images/pharmazone1.jpg"),
+      image2:require("./assets/images/pharmazone2.jpg"),
+      projectName: "Pharmazone",
+      projectDesc: "A React Native-based pharmacy platform enabling customers to order medicines, consult pharmacists, and track orders in real-time."
+    },
+    {
+      image: require("./assets/images/iptv.webp"),
+      image1: require("./assets/images/iptv1.png"),
+      image2: require("./assets/images/iptv2.png"),
+      projectName: "IPTV Streaming Platform",
+      projectDesc: "A scalable IPTV subscription service with seamless streaming, user-friendly dashboards, and secure payment integration."
+    },
+    {
+      image: require("./assets/images/luxelook.jpg"),
+      image1:require("./assets/images/luxelook1.png"),
+      image2:require("./assets/images/luxelook2.png"),
+      projectName: "Luxe Look",
+      projectDesc: "A feature-rich online store built with MERN stack, offering advanced filtering, secure checkout, and real-time order tracking."
+    },
+    {
+      image: require("./assets/images/brandCentro.jpg"),
+      image1: require("./assets/images/brandCentro1.png"),
+      image2: require("./assets/images/brandCentro2.png"),
+      projectName: "Brand Centro",
+      projectDesc: "A comprehensive motel booking platform featuring 3D models, detailed floor plans, and seamless apartment rentals, built with MERN stack."
+    },    
+    {
+      image: require("./assets/images/careerLink.webp"),
+      image1:require("./assets/images/careerLink1.png"),
+      image2:require("./assets/images/careerLink2.png"),
+      projectName: "CareerLink",
+      projectDesc: "A MERN stack-powered job portal connecting employers and job seekers with advanced filtering, resume uploads, and real-time job applications."
+    },
+    {
+      image: require("./assets/images/liveLonger.jpg"),
+      image1:require("./assets/images/liveLonger1.jpg"),
+      image2:require("./assets/images/liveLonger2.jpg"),
+      projectName: "Live Longer",
+      projectDesc: "A life-saving blood donation app built with React Native, enabling real-time donor search, emergency requests, and location-based matching."
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+
 // Achievement Section
 // Include certificates, talks etc
 
@@ -363,7 +414,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -383,5 +434,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
+  whatIDid,
   resumeSection
 };
