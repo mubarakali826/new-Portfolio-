@@ -52,7 +52,13 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
+          <div
+            className={
+              isDark
+                ? "greeting-image-div greeting-image-dark"
+                : "greeting-image-div"
+            }
+          >
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
